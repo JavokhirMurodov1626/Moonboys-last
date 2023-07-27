@@ -1,9 +1,9 @@
 .header {
     /* background-image:url(' https://xanmia.github.io/Light-Speed-Ready/images/starb.png'); */
     /* background-image: url('../images/banner-bg.webp'); */
-    background-size: cover;
+    background-size:contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position:right;
     padding-top: 3rem;
     padding-bottom: 5rem;
     position: relative;
@@ -70,6 +70,9 @@ canvas {
 .social-media {
     display: flex;
     gap: 1.6rem;
+}
+.logo{
+    max-width:19.6rem
 }
 
 .social-media .wrap {

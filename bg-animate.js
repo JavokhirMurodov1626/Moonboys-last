@@ -64,7 +64,6 @@ function start() {
 
   //Canvas and settings
 
-  console.log($("body").height());
   var canvas = document.getElementById("space"),
     context = canvas.getContext("2d"),
     width = (canvas.width = window.innerWidth),
