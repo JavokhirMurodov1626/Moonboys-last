@@ -48,9 +48,11 @@
     padding: 1.6rem 0;
     margin-bottom: 2rem;
 }
-.rank-table .table td.name{
+
+.rank-table .table td.name {
     text-transform: capitalize;
 }
+
 .rank-table .table tr {
     background: rgba(30, 31, 53, 0.80);
     margin-bottom: 2rem;
@@ -116,4 +118,14 @@ td:last-child {
         line-height: 16px;
     }
 
+}
+
+@media screen and (max-width:426px) {
+    .rank-table .table-wrap {
+        overflow-x: scroll;
+    }
+
+    .rank-table .table {
+        min-width: 60rem;
+    }
 }
