@@ -1,0 +1,119 @@
+.rank-table__inner-content {
+    max-width: 1184px;
+    width: 100%;
+    padding-bottom: 7.2rem;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+
+.rank-table__inner-content .headline p {
+    color: #6D4AFE;
+    font-family: 'RussoOne-Regular';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.rank-table__inner-content .headline {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+.rank-table__inner-content .headline img {
+    max-width: max-content;
+    object-fit: contain;
+}
+
+.rank-table__inner-content h2 {
+    text-align: left;
+    margin-bottom: 3.6rem;
+}
+
+/* table style begins */
+
+.rank-table .table {
+    width: 100%;
+    border-spacing: 0 20px;
+}
+
+.rank-table .table td {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter-Bold';
+    font-size: 18px;
+    line-height: 36px;
+    padding: 1.6rem 0;
+    margin-bottom: 2rem;
+}
+.rank-table .table td.name{
+    text-transform: capitalize;
+}
+.rank-table .table tr {
+    background: rgba(30, 31, 53, 0.80);
+    margin-bottom: 2rem;
+}
+
+.rank-table .table tr.head {
+    background: transparent;
+    color: #A7B2BA;
+    text-align: center;
+    font-family: 'Inter';
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 25.144px;
+}
+
+.rank-table .table th {
+    padding: 0.8rem 0;
+}
+
+.rank-table .table th.id {
+    text-transform: uppercase;
+}
+
+.rank-table .table td.image img {
+    width: 23.5px;
+    height: 42.3px;
+    margin: 0 auto;
+}
+
+.rank-table .table td.image {
+    padding: 1.2rem 0;
+}
+
+td:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+td:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+
+@media screen and (max-width:1024px) {
+    .rank-table__inner-content {
+        padding: 0 1.6rem;
+        padding-bottom: 3.2rem;
+    }
+
+    .rank-table__inner-content h2 {
+        margin-bottom: 0;
+    }
+
+    .rank-table .table tr.head {
+
+        line-height: 20.144px;
+    }
+
+    .rank-table .table td {
+        font-family: 'Inter-Medium';
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+}

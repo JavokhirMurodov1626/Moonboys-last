@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonboys</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <script type="module" src="index.js" defer></script>
+    <script src="jquery.min.js" defer></script>
+    <script src="bg-animate.js" defer></script>
+</head>
+
+<body>
+    <canvas id="space"></canvas>
+    <header class="header">
+        <nav class="navbar container" id="header">
+
+            <a href="/" class="logo">
+                <img src="./images/logo.png" alt="">
+            </a>
+
+            <div class="navbar-menu">
+                <ul class="link-items">
+                    <li class="link-item"><a href="#about-tournament" class="item">Turnir haqida</a></li>
+                    <li class="link-item"><a href="#leaders" class="item">Peshqadamlar</a></li>
+                    <li class="link-item"><a href="#cosmonaut" class="item">Cosmonaut</a></li>
+
+                </ul>
+                <div class="social-media">
+                    <a class="wrap" href="https://t.me/moonboysuzb">
+                        <img src="./images/icons/icon-telegram.svg" alt="">
+                    </a>
+                    <a class="wrap" href="https://www.instagram.com/moonboysuz/">
+                        <img src="./images/icons/icon-instagram.svg" alt="">
+                    </a>
+                    <a class="wrap">
+                        <img src="./images/icons/icon-twitter.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div id="nav-icon4">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <div class="hero-section">
+            <div class="trophies" data-aos="fade-down" data-aos-easing="ease-in-sine">
+                <div class="trophy">
+                    <img src="./images/trophy-silver.webp" alt="">
+                </div>
+                <div class="trophy trophy-middle">
+                    <img src="./images/trophy-gold.webp" alt="">
+                </div>
+                <div class="trophy">
+                    <img src="./images/trophy-bronze.webp" alt="">
+                </div>
+            </div>
+            <h1 class="title" data-aos="zoom-in" data-aos-easing="ease-in-sine" data-asos-duration="1000"><span>Haftalik
+                    futures chempionati</span></h1>
+            <p class="text" data-aos="fade-up">Haftalik PNL va Volume miqdori bo'yicha, savdo qilib eng yaxshi ko’rsatgichga ega treyderlar o'rtasidagi chempionatga xush kelibsiz!</p>
+            <a class="button" href="#about-tournament">
+                <span class="btn-text">Qatnashish</span>
+                <span class="hover-shape1"></span>
+                <span class="hover-shape2"></span>
+                <span class="hover-shape3"></span>
+            </a>
+        </div>
+
+        <div class="prices-wrap">
+            <div class="prices">
+
+                <div class="prices-left">
+                    <div class="price-coin-wrap"><img src="./images/coin.webp" alt="" class="price-coin"></div>
+                    <div class="content">
+                        <h3 class="prices-left-title">Haftalik mukofot</h3>
+                        <p>
+                            <span class="prices-left-amount">0
+                            </span><span class="prices-left-currancy">usdt</span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="prices-right">
+                    <p class="text">Haftalik chempionat yakunlanishiga qoldi:</p>
+                    <div class="time-table">
+                        <div class="days-slot slot">00</div>
+                        <p class="label">kun</p>
+                        <div class="hours-slot slot">00</div>
+                        <p class="label">soat</p>
+                        <div class="minutes-slot slot">00</div>
+                        <p class="label">min</p>
+                        <div class="seconds-slot slot">00</div>
+                        <p class="label">sek</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="sale-rank" id="leaders">
+            <div class="container sale-rank__main">
+                <div class="sale-rank__top" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="headline-wrap">
+                        <div>
+                            <img src="./images/icons/steps-right.svg" alt="">
+                        </div>
+                        <div>
+                            <p class="text">reyting</p>
+                        </div>
+                        <div>
+                            <img src="./images/icons/steps-left.svg" alt="">
+                        </div>
+                    </div>
+                    <h2>savdo hajmi reytingi</h2>
+                </div>
+
+                <div class="rank-grid" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+
+                    <div class="grid second-place">
+                        <div class="grid-img-wrap">
+                            <img src="./images/silver-rank.webp" alt="">
+                        </div>
+                        <div class="grid-content">
+                            <p class="grid-content__top"></p>
+                            <p class="grid-content__title">
+                                top2
+                            </p>
+                            <p class="amount-title">mukofot summasi</p>
+                            <p class="amount">
+                                00.00
+                            </p>
+                            <p class="currency">usdt</p>
+                        </div>
+                    </div>
+
+                    <div class="grid gold first-place">
+                        <div class="grid-img-wrap">
+                            <img src="./images/gold-rank.webp" alt="">
+                        </div>
+                        <div class="grid-content">
+                            <p class="grid-content__top"></p>
+                            <p class="grid-content__title">
+                                top1
+                            </p>
+                            <p class="amount-title">mukofot summasi</p>
+                            <p class="amount">
+                                00.00
+                            </p>
+                            <p class="currency">usdt</p>
+                        </div>
+                    </div>
+                    <div class="grid third-place">
+                        <div class="grid-img-wrap">
+                            <img src="./images/bronze-rank.webp" alt="">
+                        </div>
+                        <div class="grid-content">
+                            <p class="grid-content__top"></p>
+                            <p class="grid-content__title">
+                                top3
+                            </p>
+                            <p class="amount-title">mukofot summasi</p>
+                            <p class="amount">
+                                00.00
+                            </p>
+                            <p class="currency">usdt</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sale-rank__bottom">
+                    Ma'lumotlar har 12 soatda yangilanadi!
+                </div>
+            </div>
+        </section>
+
+        <section class="rank-table">
+            <div class="rank-table__inner container">
+                <div class="rank-table__inner-content">
+                    <div class="top" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="headline">
+                            <p>reyting</p>
+                            <img src="./images/icons/steps-left.svg" alt="">
+                        </div>
+                        <h2>reyting jadvali</h2>
+                    </div>
+                    <table class="table">
+
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="participation" id="about-tournament">
+            <div class="participation-inner container">
+                <div class="participation-inner__content">
+
+                    <div class="top" data-aos="fade-right" data-aos-duration="1000">
+
+                        <div class="headline">
+                            <p>3 oson qadam</p>
+                            <img src="./images/icons/steps-left.svg" alt="">
+                        </div>
+
+                        <div>
+                            <h2>Qatnashish tartibi</h2>
+                            <div class="referal-link join-group">
+                                <a href="https://mexc.uz" style="color: #fff;"> Referal link</a>
+                              
+                                <div class="refereal-link-img">
+                                    <img src="./images/icons/icon-angle-right.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="boxes" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="box">
+                            <div class="box-left">
+                                <img src="./images/number-one.png" alt="">
+                            </div>
+                            <div class="box-right">
+                                <h4 class="box-right__title">RO'YXATDAN O'TING</h4>
+                                <p class="box-right__text">Bizning havolamiz orqali Mexc birjasidan ro'yxatdan o'ting</p>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="box-left">
+                                <img src="./images/number-two.png" alt="">
+                            </div>
+                            <div class="box-right">
+                                <h4 class="box-right__title">DEPOZIT QILING</h4>
+                                <p class="box-right__text">MEXC birjasida hisobingizni yaratib olganingizdan so'ng, depozit qilishni unutmang</p>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="box-left">
+                                <img src="./images/number-three.png" alt="">
+                            </div>
+                            <div class="box-right">
+                                <h4 class="box-right__title">SAVDO QILING</h4>
+                                <p class="box-right__text">Barcha ko'rsatilgan amallarni bajarib, muntazam savdo qiling va Volume miqdorini oshirib boring</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-info" id="rules">
+            <div class="section-info__inner container">
+                <div class="section-info__inner-content">
+
+                    <div class="section-info__inner-content__top" data-aos="fade-right" data-aos-duration="1000">
+                        <div class="img-wrap">
+                            <img src="./images/icons/title-icon.png.svg" alt="">
+                        </div>
+                        <h3>CHEMPIONAT QOIDALARI VA MUKOFOTNI TAQSIMLASH</h3>
+                    </div>
+
+                    <div class="text-content" data-aos="fade-right" data-aos-duration="1000">
+                        <div>
+                            <img class="line-downward" src="./images/icons/line-downward.svg" alt="">
+                            <ul class="info-list">
+                                <li>1. Foydalanuvchilar o'z mukofotlarini olish uchun belgilangan mezonlarga javob berishlari va kerakli bosqichlarni bajarishlari kerak.</li>
+                                <li>2. Bonusingiz 7 kun davomida amal qiladi. Ushbu muddat ichida bonusingizni olishga ulgurmasangiz, keyingi g'olib aniqlanadi.</li>
+                                <li>3. Reyting g'oliblari orasida sizning ismingiz bo'lsa, Telegram orqali  <a
+                                        href="https://t.me/WhaleCRV">@WhaleCRV</a> bilan bog'lanib UID raqamingizni tasdiqlang.
+                                </li>
+                                <li>4. Ushbu mezonlar orasiga qo'shimchalar kiritilishi mumkin. Doimiy tanishib borishni unutmang!</li>
+                            </ul>
+                            <img class="line-upward" src="./images/icons/line-upward.svg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="participation cosmonout " id="cosmonaut" style="margin-top:36px">
+            <div class="participation-inner container">
+                <div class="participation-inner__content">
+
+                    <div class="top" data-aos="fade-right" data-aos-duration="1000">
+
+                        <div class="headline">
+                            <p>cosmonaut</p>
+                            <img src="./images/icons/steps-left.svg" alt="">
+                        </div>
+
+                        <div>
+                            <h2>Moonboys Cosmonaut Guruhi</h2>
+                            <div class="referal-link join-group"> 
+                                <a href="https://t.me/gismoxannazarov" style="color: #fff;"> Guruhga qo'shilish</a>
+                                <div class="refereal-link-img">
+                                    <img src="./images/icons/icon-angle-right.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cosmonout-grid" data-aos="fade-up"
+                    data-aos-duration="1000">
+                        <div class="grid-box">
+                            <div class="img-wrap">
+                                <img src="./images/icons/live-chat 1.svg" alt="">
+                            </div>
+                            <h3 class="title">JONLI VIDEOCHAT</h3>
+                            <p class="text">
+                                Yopiq guruhimizda darsliklar jonli videochatda bo'ladi va ularni takroriy ko'rish imkoniyatiga ham egasiz
+                            </p>
+                        </div>
+                        <div class="grid-box">
+                            <div class="img-wrap">
+                                <img src="./images/icons/messaging 1.svg" alt="">
+                            </div>
+                            <h3 class="title">SAVOL-JAVOBLAR</h3>
+                            <p class="text">
+                                Gismoxan Nazarov va hamjamiyat bilan birgalikda savol-javoblar va fikr almashish imkoniyati
+                            </p>
+                        </div>
+                        <div class="grid-box">
+                            <div class="img-wrap">
+                                <img src="./images/icons/financial-advisor 1.svg" alt="">
+                            </div>
+                            <h3 class="title">TREYDING SIGNALLAR</h3>
+                            <p class="text">
+                                Signallar odatda SPOT yo'nalishida. Yangi coin haqida ma'lumot va maslahatlar
+                            </p>
+                        </div>
+                        <div class="grid-box">
+                            <div class="img-wrap">
+                                <img src="./images/icons/love-message 1.svg" alt="">
+                            </div>
+                            <h3 class="title">KATTA HAMJAMIYAT</h3>
+                            <p class="text">
+                                Hamjamiyatimizda 400+ kishiga yaqin treyderlar mavjud. Muhit - o'zgacha!
+                            </p>
+                        </div>
+                    </div>
+                    <a class="join-group-link" href="https://t.me/gismoxannazarov">Guruhga qo'shilish</a>
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0; margin-top: 48px;">
+                        <iframe src="https://jumpshare.com/embed/Cw7TOzKb4RNjvtP9eS3f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                    </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-content__inner">
+                <div class="sale-rank__top">
+                    <div class="headline-wrap">
+                        <div>
+                            <img src="./images/icons/steps-right.svg" alt="">
+                        </div>
+                        <div>
+                            <p class="text">ijtimoiy tarmoqlar</p>
+                        </div>
+                        <div>
+                            <img src="./images/icons/steps-left.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-media">
+                     <a class="wrap" href="https://t.me/moonboysuzb">
+                        <img src="./images/icons/icon-telegram.svg" alt="Moonboys Telegram">
+                    </a>
+                    <a class="wrap" href="https://www.instagram.com/moonboysuz/">
+                        <img src="./images/icons/icon-instagram.svg" alt="Moonboys instagram">
+                    </a>
+                    <div class="wrap">
+                        <img src="./images/icons/icon-twitter.svg" alt="">
+                    </div>
+                </div>
+                <div class="footer-logo-wrap" data-aos="zoom-in" data-aos-duration="1500">
+                    <img src="./images/logo.png" alt="">
+                </div>
+
+                <ul class="link-items">
+                    <li class="link-item"><a href="#about-tournament" class="item">Turnir haqida</a></li>
+                    <li class="link-item"><a href="#leaders" class="item">Peshqadamlar</a></li>
+                    <li class="link-item"><a href="#rules" class="item">Qoidalar</a></li>
+                </ul>
+                <p class="copyright">Copyright © 2023. All Rights Reserved by Moonboys.uz</p>
+
+                <a class="scroll-up-btn" href="#header"><img src="./images/icons/icon-angle-up.svg" alt=""></a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+<script src="aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+</html>
