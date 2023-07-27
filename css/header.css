@@ -5,9 +5,12 @@
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 3rem;
-    padding-bottom: 17.8rem;
+    padding-bottom: 5rem;
     position: relative;
-    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 }
 
 canvas {
@@ -15,7 +18,8 @@ canvas {
     display: block;
     width: 100%;
     z-index: -11;
-  }
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -234,6 +238,7 @@ canvas {
     position: relative;
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
+    margin-bottom: 7rem;
 }
 
 .hover-shape1,
@@ -275,9 +280,10 @@ canvas {
     padding: 3rem 5rem;
     max-width: 1184px;
     width: 100%;
-    position: absolute;
+    /* position: absolute;
     left: 50%;
-    transform: translate(-50%, 40%);
+    z-index: 11;
+    transform: translate(-50%, 40%); */
     background: radial-gradient(48.58% 56.31% at 70.95% 50.00%, #4A4176 0%, #1E1F35 74.69%, #1E1F35 100%);
 }
 
@@ -527,7 +533,11 @@ canvas {
         position: unset;
         left: unset;
         transform: unset;
-        margin-top: 12rem;
+        margin-top: 7rem;
+    }
+
+    .hero-section .button {
+        margin-bottom: 0;
     }
 
     .prices-wrap .prices {
