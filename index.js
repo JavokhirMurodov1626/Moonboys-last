@@ -92,6 +92,8 @@ let x = setInterval(function () {
   // Find the distance between now and the count down date
   if (countDownDate > now) {
     distance = countDownDate - now;
+  } else {
+    distance = 0;
   }
 
   // Time calculations for days, hours, minutes and seconds
